@@ -1,40 +1,70 @@
-# Github User Activity CLI 🚀
+# GitHub Activity CLI
 
-A command-line interface (CLI) tool to fetch and display a GitHub user's recent activity directly in your terminal. Built to practice API integration, JSON parsing, and CLI development.
+A simple command-line tool to view a GitHub user's recent activity. This tool fetches and displays the most recent events from a GitHub user's activity feed.
+
 
 Sample solution for the [github-user-activity](https://roadmap.sh/projects/github-user-activity) challenge from [roadmap.sh](https://roadmap.sh/).
 
-## Features ✨
-- Fetch recent GitHub activity for any user via public API
-- Display events in human-readable format:
-  - Pushes, issues, stars, pull requests, etc.
-- Error handling for invalid usernames/API failures
-- No external dependencies for core functionality
-- Simple terminal output formatting
+## Features
 
-## Installation ⚙️
+- View recent GitHub activity for any user
+- Colorized output for better readability
+- Comprehensive error handling
+- No external HTTP libraries required
+- Supports various event types (pushes, issues, stars, etc.)
 
-### Prerequisites
-- [Node.js](https://nodejs.org) (v18+)
+## Requirements
 
----
+- Python 3.6 or higher
+- colorama (for Windows compatibility)
 
-1. **Clone the repository**
-  ```bash
-  git clone https://github.com/momed-ali01/github-user-activity.git
-  ```
+## Installation
 
-2. **Navigate to the project folder**
-  ```bash
-  cd github-user-activity
-  ```
+1. Clone this repository:
+```bash
+git clone https://github.com/yourusername/github-user-activity.git
+cd github-user-activity
+```
 
-3. **Install dependencies**
-  ```bash
-  npm install
-  ```
+2. Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-4. **Run the following command to list the activities of a user**
-  ```bash
-  node index.js
-  ```
+## Usage
+
+Basic usage:
+```bash
+python github_activity.py <username>
+```
+
+Example:
+```bash
+python github_activity.py kamranahmedse
+```
+
+### Example Output
+```
+✓ Fetched 5 events for kamranahmedse:
+- Pushed 3 commits to kamranahmedse/developer-roadmap
+- Opened issue "Update 2024 roadmap" in kamranahmedse/notes
+- Starred freeCodeCamp/freeCodeCamp
+- Created repository kamranahmedse/todo-cli
+- Forked axios/axios to kamranahmedse/axios-fork
+```
+
+## Error Handling
+
+The tool handles various error cases:
+- Invalid usernames
+- API rate limits
+- Network errors
+- Invalid API responses
+
+## Contributing
+
+Feel free to submit issues and enhancement requests!
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
