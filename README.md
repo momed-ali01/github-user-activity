@@ -2,7 +2,6 @@
 
 A simple command-line tool to view a GitHub user's recent activity. This tool fetches and displays the most recent events from a GitHub user's activity feed.
 
-
 Sample solution for the [github-user-activity](https://roadmap.sh/projects/github-user-activity) challenge from [roadmap.sh](https://roadmap.sh/).
 
 ## Features
@@ -22,7 +21,7 @@ Sample solution for the [github-user-activity](https://roadmap.sh/projects/githu
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/github-user-activity.git
+git clone https://github.com/momed-ali01/github-user-activity.git
 cd github-user-activity
 ```
 
